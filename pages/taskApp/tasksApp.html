@@ -103,12 +103,18 @@
       background-color: rgba(0, 0, 0, 0.11);
     }
 
-    .logogit{
+    .logo{
+      margin-left: 10px;
       opacity: 1;
     }
 
-    .logogit:hover{
+    .logo:hover{
       opacity: 0.3;
+    }
+
+    .navButtons{
+      display: flex;
+      flex-direction: row;
     }
       
 
@@ -127,9 +133,15 @@
         <a class="navbar-brand d-flex align-items-center">
           <strong>Task Manager</strong>
         </a>
-        <a href="https://github.com/diogoka" target="_blank" class="navbar-brand d-flex align-items-center">
-          <img class="logogit" src="/pages/taskApp/logos/github-mark-white.svg" width="60%">
-        </a>
+        <div class="navButtons">
+          <a href="#" class="navbar-brand d-flex">
+            <img class="logo" src="/pages/taskApp/logos/snack.png" width="60px">
+          </a>
+          <a href="https://github.com/diogoka" target="_blank" class="navbar-brand d-flex align-items-end">
+            <img class="logo" src="/pages/taskApp/logos/github-mark-white.svg" width="60px">
+          </a>
+
+        </div>
 
       </div>
     </div>
