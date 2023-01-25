@@ -2673,7 +2673,8 @@ input, select, textarea {
 		.profileCard{
 			width: 22em;
 			height: 30em;
-			background-image: url("../../images/profileCardBackground.jpg");
+			background-image: url('images/backgroundCard.jpg');
+			background-repeat: no-repeat, no-repeat;
             box-shadow: 0 4px 20px 0 rgba(0,0,0,0.3);
 			border-radius: 15px;
 			opacity: 93%;
