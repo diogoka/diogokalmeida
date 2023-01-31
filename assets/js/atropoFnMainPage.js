@@ -1,5 +1,4 @@
 let title = document.querySelector('.profile')
-let icons = document.querySelector('.icons')
 
 const profile = Atropos({
     el: '.profile-atropos',
@@ -7,18 +6,19 @@ const profile = Atropos({
     shadowScale: 1.05,
     onEnter() {
         title.style.transform = 'scale(1.15)'
-
-
+        
+        
     },
     onLeave() {
         title.style.transform = 'scale(1)'
-
+        
     },
     onRotate(x, y) {
-
+        
     }
 });
 
+let icons = document.querySelector('.icons')
 const footer = Atropos({
     el: '.foooter-atropos',
     activeOffset: 40,
