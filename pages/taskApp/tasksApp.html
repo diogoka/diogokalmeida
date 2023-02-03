@@ -4,258 +4,169 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="">
-  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-  <meta name="generator" content="Hugo 0.108.0">
   <title>Task Manager</title>
   <link rel="stylesheet" href="../common/css/bootstrap.min.css" />
   <link rel="stylesheet" href="../../assets/css/atropos.min.css" />
   <link rel="stylesheet" href="../taskApp/assets/css/mainTaskApp.css" />
   <link rel="icon" type="image/x-icon" href="../../icons/T.ico" />
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+
+    .b-example-divider {
+      height: 3rem;
+      background-color: rgba(0, 0, 0, .1);
+      border: solid rgba(0, 0, 0, .15);
+      border-width: 1px 0;
+      box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+    }
+
+    .b-example-vr {
+      flex-shrink: 0;
+      width: 1.5rem;
+      height: 100vh;
+    }
+
+    .bi {
+      vertical-align: -.125em;
+      fill: currentColor;
+    }
+
+    .nav-scroller {
+      position: relative;
+      z-index: 2;
+      height: 2.75rem;
+      overflow-y: hidden;
+    }
+
+    .nav-scroller .nav {
+      display: flex;
+      flex-wrap: nowrap;
+      padding-bottom: 1rem;
+      margin-top: -1px;
+      overflow-x: auto;
+      text-align: center;
+      white-space: nowrap;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .container {
+      max-width: 960px;
+    }
+
+    .product-device {
+      position: absolute;
+      right: 8%;
+      bottom: -30%;
+      width: 300px;
+      height: 540px;
+      background-image: url(./img/Home.png);
+      border-radius: 21px;
+      transform: rotate(30deg);
+    }
+
+    .product-device::before {
+      position: absolute;
+      top: 10%;
+      right: 10px;
+      bottom: 10%;
+      left: 10px;
+      content: "";
+      border-radius: 5px;
+    }
+
+    .product-device-2 {
+      top: -25%;
+      right: auto;
+      bottom: 0;
+      left: 5%;
+      background-color: #e5e5e5;
+      background-image: url(./img/HomeTomorrow.png);
+    }
+
+    .flex-equal>* {
+      flex: 1;
+    }
+
+    @media (min-width: 768px) {
+      .flex-md-equal>* {
+        flex: 1;
+      }
+    }
+
+    
+  </style>
 </head>
 
 <body>
   <header>
-
-    <div class="navbar navbar-dark bg-dark shadow-sm">
-      <div class="container">
-        <a class="navbar-brand d-flex align-items-center">
-          <strong>Task Manager</strong>
-        </a>
-        <div class="navButtons">
-          <a href="#modal" class="navbar-brand d-flex" id="demonstrationModal">
-            <img class="logo" src="./logos/snack.png" width="40px" alt="ExpoLogo">
-          </a>
-          <a href="https://github.com/diogoka/taskManager" target="_blank" class="navbar-brand d-flex align-items-end">
-            <img class="logo" src="./logos/github-mark-white.png" width="40px" alt="gitHubLogo">
-          </a>
-        </div>
-      </div>
-    </div>
-
     <div id="taskModal" class="modal">
       <div class="modal-content">
         <span class="close">&times;</span>
-        <p>Demonstration in development...</p>
+        <p>Come back soon!</p>
       </div>
     </div>
-
   </header>
   <main>
-    <section class="py-5 text-center container">
-      <div class="row py-lg-5">
-        <div class="col-lg-6 col-md-8 mx-auto">
-          <h1 class="fw-light">Task Manager</h1>
-          <p class="lead text-muted">
-            An application where you can manage your tasks by day, week and month.
-          </p>
+    <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light rounded-3">
+      <div class="container py-4" style="opacity: 80%;">
+        <div class="p-5 mb-4 bg-light rounded-3">
+          <section class="py-5 text-center container">
+            <div class="row py-lg-5">
+              <div class="col-lg-6 col-md-8 mx-auto">
+                <div class="mainText">
+                  <img src="./img/taskManager.png" alt="TaskManagerLogo" width="550px">
+                </div>
+                <p class="lead text-muted">
+                  An application where you can manage your tasks by day, week and month.
+                </p>
+              </div>
+            </div>
+            <div class="options">
+              <a href="./screenshots.html" target="_blank">
+                <img class="logo" src="../../logos/screenshotsIconColor.svg" alt="" width="150px">
+              </a>
+              <a href="#modal" id="demonstrationModal">
+                <img class="logo" src="../../logos/demIconColor.png" alt="" width="150px">
+              </a>
+              <a href="https://github.com/diogoka/taskManager" target="_blank">
+                <img class="logo" src="../../logos/githubIconblue.png" alt="" width="150px">
+              </a>
+            </div>
+          </section>
         </div>
       </div>
-    </section>
-    <div class="album py-5 bg-light">
-      <div class="container">
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-          <div class="atropos screen1">
-            <div class="atropos-scale">
-              <div class="atropos-rotate">
-                <div class="atropos-inner">
-                  <div class="col">
-                    <div class="card shadow-sm">
-                      <div class="desc">
-                        <p class="card-text">Login Screen</p>
-                      </div>
-                      <div class="card-body">
-                        <img class="img-screen1" src="./img/Login.png" width="70%"></img>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="atropos screen2">
-            <div class="atropos-scale">
-              <div class="atropos-rotate">
-                <div class="atropos-inner">
-                  <div class="col">
-                    <div class="card shadow-sm">
-                      <div class="desc">
-                        <p class="card-text">Register</p>
-                      </div>
-                      <div class="card-body">
-                        <img class="img-screen2" src="./img/Register.png" width="70%"></img>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="atropos screen3">
-            <div class="atropos-scale">
-              <div class="atropos-rotate">
-                <div class="atropos-inner">
-                  <div class="col">
-                    <div class="card shadow-sm">
-                      <div class="desc">
-                        <p class="card-text">Home</p>
-                      </div>
-                      <div class="card-body">
-                        <img class="img-screen3" src="./img/Home.png" width="70%"></img>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="atropos screen4">
-            <div class="atropos-scale">
-              <div class="atropos-rotate">
-                <div class="atropos-inner">
-                  <div class="col">
-                    <div class="card shadow-sm">
-                      <div class="desc">
-                        <p class="card-text">Menu</p>
-                      </div>
-                      <div class="card-body">
-                        <img class="img-screen4" src="./img/DrawerMenu.png" width="70%"></img>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="atropos screen5">
-            <div class="atropos-scale">
-              <div class="atropos-rotate">
-                <div class="atropos-inner">
-                  <div class="col">
-                    <div class="card shadow-sm">
-                      <div class="desc">
-                        <p class="card-text">Adding a new task</p>
-                      </div>
-                      <div class="card-body">
-                        <img class="img-screen5" src="./img/AddNewTask.png" width="70%"></img>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="atropos screen6">
-            <div class="atropos-scale">
-              <div class="atropos-rotate">
-                <div class="atropos-inner">
-                  <div class="col">
-                    <div class="card shadow-sm">
-                      <div class="desc">
-                        <p class="card-text">Task added</p>
-                      </div>
-                      <div class="card-body">
-                        <img class="img-screen6" src="./img/TaskAdded.png" width="70%"></img>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="atropos screen7">
-            <div class="atropos-scale">
-              <div class="atropos-rotate">
-                <div class="atropos-inner">
-                  <div class="col">
-                    <div class="card shadow-sm">
-                      <div class="desc">
-                        <p class="card-text">Deleting task</p>
-                      </div>
-                      <div class="card-body">
-                        <img class="img-screen7" src="./img/TaskDelete.png" width="70%"></img>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="atropos screen8">
-            <div class="atropos-scale">
-              <div class="atropos-rotate">
-                <div class="atropos-inner">
-                  <div class="col">
-                    <div class="card shadow-sm">
-                      <div class="desc">
-                        <p class="card-text">Tomorrow's tasks</p>
-                      </div>
-                      <div class="card-body">
-                        <img class="img-screen8" src="./img/HomeTomorrow.png" width="70%"></img>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="atropos screen9">
-            <div class="atropos-scale">
-              <div class="atropos-rotate">
-                <div class="atropos-inner">
-                  <div class="col">
-                    <div class="card shadow-sm">
-                      <div class="desc">
-                        <p class="card-text">Week's tasks</p>
-                      </div>
-                      <div class="card-body">
-                        <img class="img-screen9" src="./img/HomeWeek.png" width="70%"></img>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="atropos screen10">
-            <div class="atropos-scale">
-              <div class="atropos-rotate">
-                <div class="atropos-inner">
-                  <div class="col">
-                    <div class="card shadow-sm">
-                      <div class="desc">
-                        <p class="card-text">Month's tasks</p>
-                      </div>
-                      <div class="card-body">
-                        <img class="img-screen10" src="./img/HomeMonth.png" width="70%"></img>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div class="product-device shadow-sm d-none d-md-block"></div>
+      <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+    </div>
+    </main>
+    <footer>
+      <div class="footContainer">
+        <h5 style="margin-left: 10px;">Developed with</h5>
+        <img src="../../logos/reactIcon.png" alt="">
+        <img src="../../logos/postgreSQLIcon.png" alt="">
+        <img src="../../logos/axiosIcon.svg" alt="" style="margin-right: 8px;">
+        <img src="../../logos/express-js-icon.png" alt="">
       </div>
-    </div>
-  </main>
+    </footer>
 
-  <footer class="text-muted py-5">
-    <div class="container">
-      <p class="float-end mb-1">
-        <a class="return" href="#">Back to top</a>
-      </p>
-      <a class="navbar-brand d-flex align-items-center">
-        <strong>Task Manager</strong>
-      </a>
+    <script src="../common/js/bootstrap.bundle.min.js"></script>
+    <script src="../taskApp/assets/js/modalTask.js"></script>
+    <script src="../../assets/js/atropos.min.js"></script>
+    <script src="./assets/js/atroposFn.js"></script>
 
-    </div>
-  </footer>
-
-  <script src="../common/js/bootstrap.bundle.min.js"></script>
-  <script src="../taskApp/assets/js/modalTask.js"></script>
-  <script src="../../assets/js/atropos.min.js"></script>
-  <script src="./assets/js/atroposFn.js"></script>
 </body>
 
 </html>
