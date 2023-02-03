@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="./assets/regProductsIcon.ico">
+  <title>Products Registration</title>
+  <link href="../common/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/angularNextMain.css">
+</head>
+
+<body>
+  <main>
+
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+      width="100%" height="100%" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMax slice">
+      <defs>
+        <linearGradient id="bg">
+          <stop offset="0%" style="stop-color:rgba(130, 158, 249, 0.06)"></stop>
+          <stop offset="50%" style="stop-color:rgba(76, 190, 255, 0.6)"></stop>
+          <stop offset="100%" style="stop-color:rgba(115, 209, 72, 0.2)"></stop>
+        </linearGradient>
+        <path id="wave" fill="url(#bg)" d="M-363.852,502.589c0,0,236.988-41.997,505.475,0
+      s371.981,38.998,575.971,0s293.985-39.278,505.474,5.859s493.475,48.368,716.963-4.995v560.106H-363.852V502.589z" />
+      </defs>
+      <g>
+        <use xlink:href='#wave' opacity=".3">
+          <animateTransform attributeName="transform" attributeType="XML" type="translate" dur="10s" calcMode="spline"
+            values="270 230; -334 180; 270 230" keyTimes="0; .5; 1" keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
+            repeatCount="indefinite" />
+        </use>
+        <use xlink:href='#wave' opacity=".6">
+          <animateTransform attributeName="transform" attributeType="XML" type="translate" dur="8s" calcMode="spline"
+            values="-270 230;243 220;-270 230" keyTimes="0; .6; 1" keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
+            repeatCount="indefinite" />
+        </use>
+        <use xlink:href='#wave' opacty=".9">
+          <animateTransform attributeName="transform" attributeType="XML" type="translate" dur="6s" calcMode="spline"
+            values="0 230;-140 200;0 230" keyTimes="0; .4; 1" keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
+            repeatCount="indefinite" />
+        </use>
+      </g>
+    </svg>
+
+    <div class="container py-4">
+      <header class="pb-3 mb-4 border-bottom">
+        <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
+          <img src="./assets/next/logo/nextSVG.png" width="77" style="margin-right: 8px;" alt="NextLogoNavbar">
+          <span class="fs-4"> and <img src="./assets/angular/logo/angularSVG.svg" width="40" alt="AngularLogoNavBar" style="margin-left: 4px;">ngular <i>Projects</i></span>
+        </a>
+
+        <div id="angularModal" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Hold on! It's almost ready!</p>
+          </div>
+        </div>
+
+      </header>
+
+      <div class="p-5 mb-4 bg-light rounded-3" id="firstCard" >
+        <div class="container-fluid py-5">
+          <h1 class="display-5 fw-bold">Applications created to register products.</h1>
+          <p class="col-md-8 fs-4">Using Angular and Next.js, the applications were created to register products.
+            It was used TypeScript, JSON Server, Tailwind CSS, Firebase and MongoDB to create the applications.
+          </p>
+        </div>
+      </div>
+
+      <div class="row align-items-md-stretch" style="opacity: 85%;">
+        <div class="col-md-6">
+          <div class="h-100 p-5 text-bg-dark rounded-3">
+            <div style="display: flex; align-items: center; justify-content: center;">
+              <img src="./assets/next/logo/nextjslogo.png" alt="NextLogoCard" width="150">
+            </div>
+            <br />
+            <h2>Next.js Application</h2>
+            <a href="https://next-produtct-registration.vercel.app/" style="text-decoration: none;" target="_blank">
+              <img class="logo" src="../../logos/demoLogoWhite.png" alt="DemoLogoWhite" width="60px" style="margin-left: 20px;">
+            </a>
+            <a href="https://github.com/diogoka/next-crud" target="_blank">
+              <img class="logo" src="../../logos/gitHubIconWhite.png" alt="gitHubLogoWhite" width="60px" style="margin-left: 50px;">
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="h-100 p-5 bg-light border rounded-3">
+            <div style="display: flex; align-items: center; justify-content: center;">
+              <img src="./assets/angular/logo/angular.png" alt="AngularLogoCard" width="150">
+            </div>
+            <br />
+            <h2>Angular Application</h2>
+            <a href="#modal" style="text-decoration: none;" id="demonstrationModal">
+              <img class="logo" src="../../logos/demonstrationIcon.png" alt="DemoLogoBlack" width="60px" style="margin-left: 20px;">
+            </a>
+            <a href="https://github.com/diogoka/angular9CRUD" target="_blank">
+              <img class="logo" src="../../logos/gitHubIcon.png" alt="gitHubLogoBlack" width="60px" style="margin-left: 50px;">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="./assets/js/modalDem.js" ></script>
+
+</body>
+
+</html>

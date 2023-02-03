@@ -87,7 +87,6 @@
 }
 
 .logo {
-    margin-left: 10px;
     opacity: 1;
 }
 
@@ -138,3 +137,48 @@
 [class^="img-screen"] {
     transition: transform .7s;
 }
+
+.today{
+    color: #b13b44;
+}
+
+.tomorrow{
+    color: #c9742e;
+}
+
+.week{
+    color: #15721e;
+}
+
+.month{
+    color: #1631be;
+}
+
+
+.options{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    
+}
+
+.mainText{
+    display: flex!important;
+    justify-content: center!important;
+    align-items: center!important;
+}
+
+.footContainer{
+    display: flex;
+    margin-right: 100px;
+}
+
+.footContainer img{
+    width:  3%;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+
+
+}
+ 
