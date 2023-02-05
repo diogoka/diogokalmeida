@@ -167,6 +167,7 @@
     display: flex!important;
     justify-content: center!important;
     align-items: center!important;
+    z-index: 3;
 }
 
 .footContainer{
@@ -178,7 +179,9 @@
     width:  3%;
     aspect-ratio: 3/2;
     object-fit: contain;
+}
 
-
+body{
+    z-index: 1;
 }
  
