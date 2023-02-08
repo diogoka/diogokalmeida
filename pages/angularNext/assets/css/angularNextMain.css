@@ -87,6 +87,7 @@ svg {
 
 @media only screen and (max-width: 600px) {
   svg {
+    bottom: -770px;
   }
 
   #headerIcons {
