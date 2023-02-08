@@ -1,4 +1,7 @@
 let all = document.querySelectorAll('div[class*="screen"]')
+let width = window.innerWidth;
+
+if(width >= 600) {
 all.forEach(el => {
     const loginFn = Atropos({
         el: `.${el.classList[1]}`,
@@ -16,3 +19,6 @@ all.forEach(el => {
         }
     });
 })
+}
+
+console.log(width)
