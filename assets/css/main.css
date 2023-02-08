@@ -2034,10 +2034,6 @@ input, select, textarea {
 			display: none;
 		}
 
-		.icon:before {
-			line-height: inherit;
-		}
-
 		.icon.solid:before {
 			font-weight: 900;
 		}
@@ -3138,17 +3134,6 @@ input, select, textarea {
 					margin: 0 0 1em 0;
 				}
 
-				#footer .copyright {
-					margin: 0 0 1em 0;
-				}
-
-					#footer .copyright li {
-						border-left-width: 1px;
-						display: inline-block;
-						line-height: 1em;
-						margin-left: 0.75em;
-						padding-left: 0.75em;
-					}
 
 		/* Main */
 
@@ -3214,6 +3199,7 @@ input, select, textarea {
 				padding: 2.25em 1.5em;
 			}
 
+
 		/* Main */
 
 			#main {
@@ -3251,15 +3237,5 @@ input, select, textarea {
 				#header h1 br {
 					display: none;
 				}
-
-		/* Footer */
-
-			#footer .copyright li {
-				border-left-width: 0;
-				display: block;
-				line-height: 2.25em;
-				margin-left: 0;
-				padding-left: 0;
-			}
 
 	}

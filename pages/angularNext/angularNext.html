@@ -13,7 +13,81 @@
 <body>
   <main>
 
-    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+    
+
+    <div class="container py-4">
+      <header class="pb-3 mb-4 border-bottom" id="headerIcons">
+        <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
+          <img src="./assets/next/logo/nextSVG.png" width="77" style="margin-right: 8px;" alt="NextLogoNavbar">
+          <span class="fs-4"> and <img src="./assets/angular/logo/angularSVG.svg" width="40" alt="AngularLogoNavBar" style="margin-left: 4px;">ngular <i>Projects</i></span>
+        </a>
+
+        <div id="angularModal" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Hold on! It's almost ready!</p>
+          </div>
+        </div>
+      </header>
+
+      <div class="p-5 mb-4 bg-light rounded-3" id="firstCard" >
+        <div class="container-fluid py-5" id="cardText">
+          <h1 class="display-5 fw-bold">Applications created to register products.</h1>
+          <p class="col-md-8 fs-4">Using Angular and Next.js, the applications were created to register products.
+            It was used TypeScript, JSON Server, Tailwind CSS, Firebase and MongoDB to create the applications.
+          </p>
+        </div>
+      </div>
+
+      <div class="row align-items-md-stretch align-items-sm-stretch" style="opacity: 85%;" id="appsCards">
+        <div class="col-md-6">
+          <div class="h-100 p-5 text-bg-dark rounded-3">
+            <div class="logoImages">
+              <img src="./assets/next/logo/nextjslogo.png" alt="NextLogoCard" width="150">
+            </div>
+            <br />
+            <h2>Next.js Application</h2>
+
+            <div class="cardFooter">
+            
+            <a href="https://next-produtct-registration.vercel.app/" style="text-decoration: none;" target="_blank">
+              <img class="logo" src="../../logos/demoLogoWhite.png" alt="DemoLogoWhite" width="60px" style="margin-left: 20px;">
+            </a>
+            <a href="https://github.com/diogoka/next-crud" target="_blank">
+              <img class="logo" src="../../logos/gitHubIconWhite.png" alt="gitHubLogoWhite" width="60px" style="margin-left: 50px;">
+            </a>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="h-100 p-5 bg-light border rounded-3">
+            <div class="logoImages">
+              <img src="./assets/angular/logo/angular.png" alt="AngularLogoCard" width="150">
+            </div>
+            <br />
+            <h2>Angular Application</h2>            
+            <div class="cardFooter">
+
+                <a href="#modal" style="text-decoration: none;" id="demonstrationModal">
+                  <img class="logo" src="../../logos/demonstrationIcon.png" alt="DemoLogoBlack" width="60px" style="margin-left: 20px;">
+                </a>
+                <a href="https://github.com/diogoka/angular9CRUD" target="_blank">
+                  <img class="logo" src="../../logos/gitHubIcon.png" alt="gitHubLogoBlack" width="60px" style="margin-left: 50px;">
+                </a>
+
+            </div>
+            
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+  
+  
+    <svg id="waveBackground" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
       width="100%" height="100%" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMax slice">
       <defs>
         <linearGradient id="bg">
@@ -42,66 +116,7 @@
         </use>
       </g>
     </svg>
-
-    <div class="container py-4">
-      <header class="pb-3 mb-4 border-bottom">
-        <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
-          <img src="./assets/next/logo/nextSVG.png" width="77" style="margin-right: 8px;" alt="NextLogoNavbar">
-          <span class="fs-4"> and <img src="./assets/angular/logo/angularSVG.svg" width="40" alt="AngularLogoNavBar" style="margin-left: 4px;">ngular <i>Projects</i></span>
-        </a>
-
-        <div id="angularModal" class="modal">
-          <div class="modal-content">
-            <span class="close">&times;</span>
-            <p>Hold on! It's almost ready!</p>
-          </div>
-        </div>
-
-      </header>
-
-      <div class="p-5 mb-4 bg-light rounded-3" id="firstCard" >
-        <div class="container-fluid py-5">
-          <h1 class="display-5 fw-bold">Applications created to register products.</h1>
-          <p class="col-md-8 fs-4">Using Angular and Next.js, the applications were created to register products.
-            It was used TypeScript, JSON Server, Tailwind CSS, Firebase and MongoDB to create the applications.
-          </p>
-        </div>
-      </div>
-
-      <div class="row align-items-md-stretch" style="opacity: 85%;">
-        <div class="col-md-6">
-          <div class="h-100 p-5 text-bg-dark rounded-3">
-            <div style="display: flex; align-items: center; justify-content: center;">
-              <img src="./assets/next/logo/nextjslogo.png" alt="NextLogoCard" width="150">
-            </div>
-            <br />
-            <h2>Next.js Application</h2>
-            <a href="https://next-produtct-registration.vercel.app/" style="text-decoration: none;" target="_blank">
-              <img class="logo" src="../../logos/demoLogoWhite.png" alt="DemoLogoWhite" width="60px" style="margin-left: 20px;">
-            </a>
-            <a href="https://github.com/diogoka/next-crud" target="_blank">
-              <img class="logo" src="../../logos/gitHubIconWhite.png" alt="gitHubLogoWhite" width="60px" style="margin-left: 50px;">
-            </a>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="h-100 p-5 bg-light border rounded-3">
-            <div style="display: flex; align-items: center; justify-content: center;">
-              <img src="./assets/angular/logo/angular.png" alt="AngularLogoCard" width="150">
-            </div>
-            <br />
-            <h2>Angular Application</h2>
-            <a href="#modal" style="text-decoration: none;" id="demonstrationModal">
-              <img class="logo" src="../../logos/demonstrationIcon.png" alt="DemoLogoBlack" width="60px" style="margin-left: 20px;">
-            </a>
-            <a href="https://github.com/diogoka/angular9CRUD" target="_blank">
-              <img class="logo" src="../../logos/gitHubIcon.png" alt="gitHubLogoBlack" width="60px" style="margin-left: 50px;">
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </main>
+  
 
   <script src="./assets/js/modalDem.js" ></script>
 
