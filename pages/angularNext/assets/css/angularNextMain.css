@@ -68,6 +68,30 @@ svg {
   align-items: center;
 }
 
+.logoImages img {
+  width: 150px;
+}
+
+.cardFooter a {
+  text-decoration: none;
+}
+
+.cardFooter img {
+  width: 60px;
+}
+
+.cardFooter > a:nth-child(1) {
+  margin-left: 20px;
+}
+
+.cardFooter > a:nth-child(2) {
+  margin-left: 50px;
+}
+
+#appsCards {
+  opacity: 85%;
+}
+
 /* tablet */
 
 @media only screen and (max-width: 1339px) {
