@@ -162,6 +162,14 @@ body {
   max-width: 960px;
 }
 
+.logoScreenshotPage {
+  width: 60px;
+}
+
+.logoScreenshotPage:hover {
+  opacity: 0.3;
+}
+
 @media only screen and (max-width: 1440px) {
   #deviceScreenshot {
     z-index: 1;
