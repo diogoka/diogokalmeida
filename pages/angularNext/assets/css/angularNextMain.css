@@ -1,6 +1,5 @@
 svg {
   position: absolute;
-  /* position: sticky; */
   z-index: -1;
   bottom: 0;
   left: 0;
@@ -95,9 +94,6 @@ svg {
 /* tablet */
 
 @media only screen and (max-width: 1339px) {
-  svg {
-  }
-
   #cardText > h1 {
     margin-right: 50px;
   }
@@ -110,10 +106,6 @@ svg {
 /* Mobile */
 
 @media only screen and (max-width: 600px) {
-  svg {
-    bottom: -770px;
-  }
-
   #headerIcons {
     display: flex;
     align-items: center;
